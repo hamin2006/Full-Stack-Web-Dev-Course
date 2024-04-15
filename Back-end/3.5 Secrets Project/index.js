@@ -8,9 +8,8 @@ import { fileURLToPath } from "url";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
 const port = 3000;
-var pass = "";
 
-app.use(express.urlencoded({ extended: true }));
+app.use((express.urlencoded()));
 app.use(express.json());
 
 app.get("/", (req, res) => {
