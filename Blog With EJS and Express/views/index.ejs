@@ -1,0 +1,11 @@
+<%- include("partials/header.ejs") %>
+
+        <h1>Blogs</h1>
+        <ul>
+            <%for (let b of blogs) {%>
+                <li><a href= <%= b.tag %>><%= b.title %></a></li>
+            <%} %>
+        </ul>
+    </main>
+</body>
+</html>
